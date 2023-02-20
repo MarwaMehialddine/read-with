@@ -1,0 +1,170 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Book Details</title>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <script type="text/javascript">
+
+
+    var index = document.URL.indexOf('?');
+          if (index > 0) {
+  
+            var bookIsbn = document.URL.substring(index, document.URL.length).split("=")[1]
+          
+          }
+    
+    let book = {
+      apikey: "AIzaSyAO9KsMIZQ2FpNeabxk7TJineYekfUh_jY",
+
+      fetchBooksByISBN: function(isbn) {
+        fetch("https://www.googleapis.com/books/v1/volumes?q=isbn:" +
+          isbn +
+          "&printType=books&key=" +
+          this.apikey)
+          .then(response => response.json())
+          .then(data => {
+            console.log(data)
+            this.displayBooks(data)
+          })
+      },
+
+      displayBooks: function(data) {
+
+        data.items.forEach(d => {
+
+          const { thumbnail } = d.volumeInfo.imageLinks;
+          const { title } = d.volumeInfo;
+          const author = d.volumeInfo.authors;
+          const publisher = d.volumeInfo.publisher;
+          const publication_date= d.volumeInfo.publishedDate
+          const description = d.volumeInfo.description;
+          const page_count = d.volumeInfo.pageCount;
+          const isbn = d.volumeInfo.industryIdentifiers[0].identifier;
+          const average_rating = d.volumeInfo.averageRating;
+          const ratings_count = d.volumeInfo.ratingsCount;
+          const subject = d.volumeInfo.categories;
+          
+          
+
+          // link to a new page with quering isbn
+          let viewUrl = 'book.html?isbn=' + isbn;
+
+          const result3 = document.createElement("div");
+          result3.classList.add("entry");
+
+          const bookCell = document.createElement("div");
+          bookCell.classList.add("book-cell");
+          result3.appendChild(bookCell);
+
+          const bookImg = document.createElement("div");
+          bookImg.classList.add("book-img");
+          bookCell.appendChild(bookImg);
+
+          const img = document.createElement("img");
+          img.src = thumbnail;
+          img.style.width= "550px";
+          img.classList.add("book-photo");
+          bookImg.appendChild(img);
+
+          const bookContent = document.createElement("div");
+          bookContent.classList.add("book-content");
+          bookCell.appendChild(bookContent);
+
+          const titleElement = document.createElement("h2");
+          titleElement.classList.add("book-title");
+          titleElement.textContent = title;
+          bookContent.appendChild(titleElement);
+
+          const authorElement = document.createElement("h4");
+          authorElement.classList.add("book-author");
+          authorElement.textContent = `Author: ${author}`;
+          bookContent.appendChild(authorElement);
+
+          const publisherElement = document.createElement("h4");
+          publisherElement.classList.add("publisher");
+          publisherElement.textContent = `Publisher: ${publisher}`;
+          bookContent.appendChild(publisherElement);
+
+          const publisherDate = document.createElement("h4");
+          publisherDate.classList.add("publisher");
+          publisherDate.textContent = `Date of Publication: ${publication_date}`;
+          bookContent.appendChild(publisherDate);
+
+          const category = document.createElement("p");
+          category.classList.add("category");
+          category.textContent = `Category: ${subject}`;
+          bookContent.appendChild(category);
+
+          const descriptionDiv = document.createElement("div");
+          descriptionDiv.classList.add("book-sum");
+          bookContent.appendChild(descriptionDiv);
+
+          const descriptionElement = document.createElement("p");
+          // descriptionElement.classList.add("book-sum");
+          descriptionElement.textContent = `Description:  ${description}`;
+          descriptionDiv.appendChild(descriptionElement);
+
+          const hr = document.createElement("hr");
+          bookContent.appendChild(hr);
+
+          const stats = document.createElement("div");
+          stats.classList.add("stats");
+          bookContent.appendChild(stats);
+
+          const rating_average = document.createElement("p");
+          rating_average.textContent = `Average Rating: ${average_rating}`;
+          stats.appendChild(rating_average);
+
+          const ratingsCount = document.createElement("p");
+          ratingsCount.textContent = `Ratings Count: ${ratings_count}`;
+          stats.appendChild(ratingsCount);
+
+          const pageCountElement = document.createElement("p");
+          pageCountElement.textContent = `Page Count: ${page_count}`;
+          stats.appendChild(pageCountElement);
+
+          const link = document.createElement("a");
+          link.setAttribute('target', '_blank');
+          link.classList.add("book-see2");
+          link.textContent = "Read Online";
+          link.href = viewUrl
+          bookContent.appendChild(link);
+
+          const open_book = document.createElement("img");
+          open_book.classList.add("open-book");
+          open_book.src = "images/open-book-logo.png";
+          link.appendChild(open_book);
+
+
+          
+          const bookDiv = document.getElementById("viewerCanvas");
+          bookDiv.appendChild(result3);
+
+
+        })
+
+      },
+    }
+
+    book.fetchBooksByISBN(bookIsbn)
+
+
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center" id="viewerCanvas"></div>
+  </div>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</body>
+
+</html>
+
+
+

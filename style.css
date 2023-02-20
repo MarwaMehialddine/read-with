@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sniglet&display=swap');
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+:root {
+ --body-bg-color: #e5f4f9;
+ --body-color-light: #8b939c;
+ --page-bg-color: #f2f5f7;
+ --body-color: #3d4954;
+ --border-color: #b8bec3;
+ --placeholder: #ccd0d2;
+}
+
+* {
+ outline: none;
+ box-sizing: border-box;
+}
+
+
+/* navbar */
+
+header{
+    position: sticky;
+    top: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    flex-shrink: 0;
+    color: #263e0f;
+}
+
+/* ul li{
+    text-transform: uppercase;
+} */
+
+.dropdown{
+    margin: 5px;
+}
+
+/* nav ul li{
+    list-style: none;
+    font-size: larger;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #263e0f;
+    margin: auto;
+} */
+
+
+
+/* /* ul li {
+    list-style: none;
+    /* display: inline; */
+    /* margin: 20px; */
+/* } */  
+
+
+/* ul{
+    margin-left: 500px;
+/*     opacity: 0.9; */
+  
+/* } */ 
+
+
+/* a:hover{
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 20px;
+} */
+
+/* @media screen and (min-width:0\0) {
+    select {
+        background-image:none\9;
+        padding: 5px\9;
+    }
+} */
+
+#logo{
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#logo:hover{
+    transform: rotate(20deg);
+}
+
+.logo{
+    display: flex;
+}
+
+#R{
+    color: #263e0f;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#E{
+    color: #fbadaf;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#A{
+    color: #4f7a28;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#D{
+    color: #b92d5d;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#with{
+  color: #263e0f;
+}
+
+#Jana{
+    font-weight: bolder;
+    font-size: 23px;
+    color: #263e0f;
+}
+
+.library{
+    display: flex;
+/*     margin-left: 250px; */
+}
+
+#library_logo{
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+    padding-right: 5px;
+}
+
+
+#my_library{
+    font-weight: bolder;
+    color: #263e0f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* best sellers navbar */
+
+.sellers{
+    margin-left: 100px;
+}
+
+#best_sellers_style{
+    font-weight: bolder;
+    color: #263e0f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+#categories, #en{
+    color: #263e0f;
+    font-weight: bolder;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #263e0f;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+}
+
+#item{
+  color: #b92d5d;
+}
+
+.navbar-brand{
+    margin-top: 20px;
+}
+
+#searchlogo{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+/* .form-control.me-2, .btn.btn-outline-success{
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+} */
+
+
+/* .form-control.me-2{
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+/*     font-family: 'Sniglet', cursive; */
+
+/* } */ 
+
+/* 
+#navbarDarkDropdownMenuLink{
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+    display: flex;
+    position: relative;
+    
+}
+
+#navbarDarkDropdownMenuLink:hover{
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 20px;
+}
+
+/* #dropdownMenuButton1{
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+
+}
+
+#dropdownMenuButton1:hover{
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 20px;
+} */
+
+.navbar>.container-fluid{
+    justify-content: end !important;
+    margin-right: 10px;
+}
+
+#dropdownMenuButton1{
+    background-color: transparent;
+    color: #263e0f;
+    border-color: transparent;
+}
+
+#dropdownMenuButton1:hover{
+    background-color: white;
+    border: 1px solid green;
+    /* border-radius: 20px; */
+}
+
+/* introduction section */
+
+.introduction_section{
+    /* background-color: grey; */
+    display: flex;
+    /* justify-content: space-between; */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+/*     font-family: 'Sniglet', cursive; */
+}
+
+#background-image{
+    width: 100%;
+    /* height: 30%; */
+}
+
+
+/* tags */
+
+h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: green;
+    /* text-shadow: 1px 1px black; */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+h3{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+p{
+  margin-bottom: auto;
+}
+
+/* best seller */
+
+#best_sellers{
+  padding-bottom: 20px;
+}
+
+#best-seller-titles{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+/* footer */
+
+.footer{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+/*     font-family: 'Sniglet', cursive; */
+    color: #263e0f;
+}
+
+.logo2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#copyright{
+    font-size: 20px;
+    text-align: center;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+/* cards  */
+
+.entry {
+    padding: 0 10px;
+    color: black;
+    overflow: hidden;
+}
+
+.book-slide {
+    width: 100%;
+   }
+
+.book-cell {
+    display: flex;
+    justify-content: center; 
+    padding: 25px;
+    margin: auto;
+    margin-bottom: 30px ;
+    /* background-color: grey;
+    border: 1px solid black;
+    max-width: 500px; */
+}
+   
+.book-cover{
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #7f818e;
+    transition: .3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+ 
+}
+
+.book-cover:hover {
+  transform: scale(1.03);
+}
+
+.book-photo {
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #c0c0c0;
+    transition: .3s ease;
+/*     margin-right: 20px; */
+}
+
+.book-photo:hover {
+    transform: scale(1.03);
+/*     display: sticky; */
+    width: 180px;
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+/*     box-shadow: -2px 6px 19px 0px #c0c0c0; */
+/*     transition: .3s ease; */
+    margin-right: 20px;
+    box-shadow: -2px 6px 19px 0px #929292;
+}
+
+.book-img {
+    flex-shrink: 0;
+}
+
+.book-content {
+    padding-left: 30px;
+    width:400px;
+    padding-right: 30px;
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.book-title {
+ text-overflow: ellipsis;
+/*  white-space: nowrap; */
+/*  overflow: hidden; */
+  font-size: 20px;
+  color: #38571a;
+  font-weight: 500px;
+  text-decoration: underline;
+}
+
+/* .book-title a {
+    color: #263e0f;
+    font-weight: 600;
+   }
+
+.book-title a:hover{
+  text-decoration: none;
+  color: #b92d5d;
+}
+
+.book-title a:visited{
+  text-decoration: none;
+  color: #b92d5d;
+}
+
+.book-title a:linked{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.book-title a:active{
+  text-decoration: none;
+  color: #96d35f;
+} */
+
+.save_button{
+  float: right;
+  background-color: transparent;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.save_button:hover{
+    transform: translateY(0) scale(1.5);
+    
+}
+
+/* .delete-button{
+    background-color: transparent;
+	color: inherit;
+	border: none;
+    position: sticky !important;
+    font-size:small !important;
+} */
+
+.delete-button:hover{
+    transform: translateY(0) scale(1.5);
+}
+
+
+.book-author {
+ margin-top: 3px;
+ font-size: 18px;
+ text-overflow: ellipsis;
+/*  white-space: nowrap;
+ overflow: hidden; */
+  color: #fbadaf;
+}
+
+/* fieldset,
+label {
+ margin: 0;
+ padding: 0;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.rating > input {
+    display: none;
+   }
+   .rating > label:before {
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+   }
+   
+   .rating > label {
+    color: #b1dd8c;
+    float: right;
+   }
+   
+   .rating > input:checked ~ label,
+   .rating:not(:checked) > label:hover,
+   .rating:not(:checked) > label:hover ~ label {
+    color: #4f7a28;
+   }
+   .rating > input:checked + label:hover,
+   .rating > input:checked ~ label:hover,
+   .rating > label:hover ~ input:checked ~ label,
+   .rating > input:checked ~ label:hover ~ label {
+    color: #4f7a28;
+   }
+ */
+
+.publisher {
+    margin-top: 10px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+/*     white-space: nowrap;
+    overflow: hidden; */
+    color: #263e0f
+}
+
+.book-sum {
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+/*     width: 400px; */
+/*   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px; */
+    color: #4f7a28;
+  
+}
+
+/* 
+.hr{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+} */
+
+
+.stats{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b92d5d;
+}
+
+.page_count{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b1dd8c;
+}
+
+hr{
+    margin: 1rem 0;
+    color: #f4a4c0 !important;
+    background-color: #f4a4c0;
+    border: 0;
+    opacity: .25;
+}
+
+.book-see1, .book-see2{
+    /* margin-top: 10px;
+    margin-right: 10px; */
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 14px;
+    width: 160px;
+    border-radius: 20px;
+    border-color: grey;
+    text-decoration: none;
+}
+
+.book-see3{
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+/*     font-weight: 600; */
+    font-size: 14px;
+    color: #ed719e;
+  
+}
+
+.book-see3:hover{
+  color: #b1dd8c;
+}
+
+.book-see3:visited{
+  color: #b92d5d;
+}
+
+/* .book-see1{
+  background-color: #cce8b5;
+  color: #4f7a28;
+}
+
+.book-see2{
+      background-color: #f4a4c0;
+    color: #b92d5d;
+} */
+/* .book-see:hover {
+  color: #fbadaf;
+ } */
+
+.book-see1{
+    color: #b92d5d;
+    background-color: #cce8b5;
+    font-weight: 600;
+   }
+
+.book-see1:hover{
+  text-decoration: none;
+/*   color: #f4a4c0; */
+  color: #96d35f;
+}
+
+.book-see1:visited{
+  text-decoration: none;
+  color: #4f7a28;
+}
+
+.book-see1:linked{
+  text-decoration: none;
+  color: #b92d5d;
+/*   color: #96d35f; */
+}
+
+.book-see1:active{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+
+.book-see2{
+    color: #4f7a28;
+    background-color: #f4a4c0;
+    font-weight: 600;
+   }
+
+.book-see2:hover{
+  text-decoration: none;
+  color: #ed719e;
+}
+
+.book-see2:visited{
+  text-decoration: none;
+  color: #b92d5d;
+}
+
+.book-see2:linked{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.book-see2:active{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.open-book{
+    padding: 5px;
+}
+
+
+
+/* my library style */
+
+.welcome_to_your_library{
+    color: #b92d5d;
+}
+
+#library_books{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#library_books_sellers{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container {
+    margin: auto auto;
+    max-width: 910px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+
+  .fa {
+    margin-right: 20px;
+    font-size: 30px;
+    color: gray;
+    float: right;
+  }
+  
+  .book {
+    display: inline-block;
+    width: 380px;
+    /* max-height: 500px; */
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px;
+    vertical-align: top;
+    transition: height 1s;
+  }
+
+  /* star button */
+  /* .book:after {
+    font-family: FontAwesome;
+    content: "\f006";
+    font-size: 35px;
+    position: relative;
+    left: -.1cm;
+    top: -1.6cm;
+    float: right;
+  } */
+  
+
+  .delete-button{
+    font-family: FontAwesome;
+    content: "\f006";
+    /* font-size: 35px;
+    position: relative; */
+    background-color: transparent;
+	color: inherit;
+	border: none;
+    left: -.1cm;
+    top: -1.6cm;
+    float: right;
+  }
+
+  .cover {
+    border: 2px solid gray;
+    height: 80%;
+    overflow: hidden;
+  }
+  
+  .cover img {
+    width: 100%;
+  }
+  
+  /* .book p {
+    margin-top: 12px;
+    font-size: 20px;
+  } */
+  
+  .book .author {
+    font-size: 15px;
+  }
+  @media (max-width: 941px) {
+    .container {
+      max-width: 700px;
+    }
+    .book {
+      margin: 49px;
+    }
+  }
+  @media (max-width: 730px) {
+    .book {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    /* .cover {
+      
+    } */
+  }
+  
+  
+  /* h1 {
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -3px;
+  } */
+  
+ 
+  .list-th:target .book {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+  }
+  
+  .list-th:target .cover {
+    width: 246px;
+  }
+  
+  .list-th:target img {
+    opacity: .1;
+  }
+  
+  .list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+  }
+
+  /* remove button? */
+  .large-th:target .book {
+    height: 390px;
+  }
+  
