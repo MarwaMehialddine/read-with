@@ -227,11 +227,6 @@ input::placeholder {
     border-radius: 20px;
 } */
 
-.navbar>.container-fluid{
-    justify-content: end !important;
-    margin-right: 10px;
-}
-
 #dropdownMenuButton1{
     background-color: transparent;
     color: #263e0f;
